@@ -1,0 +1,73 @@
+//incorporar productos
+<html>  
+    <head>  
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Productos</title> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .label-empty {
+                padding-top: 25px;
+            }
+            .label-empty::before {
+                content: "\00a0 ";
+            }
+        </style>
+    </head>  
+    <body>  
+        <div class="container">  
+            <br />  
+            <br />  
+            <br />  
+            <div class="table-responsive">  
+                <h3 align="center">Productos</h3><br />  
+                <div id="live_data"></div> 
+                                   
+            </div>
+            
+            <div class="form-group">  
+                <form method="post" id="insert_form">  
+                    <label>Nombre</label>  
+                    <input type="text" name="product" id="product" class="form-control" />  
+                    <clas class="form-control" />
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label class="label-control" for="msv">U.M.V.</label>
+                            <input class="form-control" type="text" name="msv" id="msv" >
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label class="label-control" for="stock">Stock</label>
+                            <input class="form-control" type="text" name="stock" id="stock" >
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label class="label-control" for="qty">Cantidad</label>
+                            <input class="form-control" type="number" name="qty" id="qty">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label class="label-control" for="unitary">Unitario</label>
+                            <input class="form-control" type="number" name="unitary" id="unitary">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label class="label-control" for="discount">Descuento</label>
+                            <input class="form-control" type="number" name="discount" id="discount">
+                        </div>
+                    </div>
+             
+        </div>  
+        // form para insertar Productos
+        <div class="form-group">  
+            <input type="hidden" name="action" id="action" value="insert" />  
+            <input type="submit" name="form_action" id="form_action" class="btn btn-info" value="Insert" />
+        
+    </body>
+</html>
